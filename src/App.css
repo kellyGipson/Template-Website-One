@@ -1,15 +1,18 @@
 html {
-  --background-color: #0d1317;
-  --accent-dark: #101d42;
+  --background-color: hsl(204, 28%, 7%);
+  --accent-dark: hsl(224, 10%, 15%);
   --accent-color: #232ed1;
   --accent-medium: #6564db;
   --accent-light: #89d2dc;
   --grey: #999;
   --white: #ddd;
+  --menu-speed: 0.6s;
+  --menu-height: 4rem;
 }
 
 @media (max-width: 425px) {
-  body {
+  .overflowHidden {
+    overflow-y: hidden;
     overflow-x: hidden;
   }
 }

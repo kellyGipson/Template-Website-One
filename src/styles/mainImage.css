@@ -1,0 +1,60 @@
+@media (max-width: 425px) {
+  .mainImage {
+    height: 50vh;
+    width: 100vw;
+  }
+}
+
+.mainImageContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.mainImage {
+  object-fit: cover;
+  object-position: 50%;
+}
+
+.mainImageTextContainer {
+  color: var(--white);
+  position: absolute;
+  left: 1rem;
+}
+
+.mainImageText:hover {
+  color: var(--accent-medium);
+}
+
+.mainImageTextButton {
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  width: fit-content;
+  border: 1px solid white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.mainImageTextButton:active {
+  background-color: var(--white);
+  color: var(--accent-dark);
+}
+
+.imageSocialLinksContainer {
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding-block: 0.5rem;
+  background-color: var(--white);
+  color: var(--background-color);
+}
+
+.imageSocialLink {
+  height: 2rem;
+  width: auto;
+  cursor: pointer;
+}

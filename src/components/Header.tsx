@@ -1,5 +1,6 @@
 import { RiMenuFoldLine, RiMenuUnfoldLine } from "react-icons/ri";
 import NavItem from "../components/NavItem";
+import { IoClose } from "react-icons/io5";
 
 type propTypes = {
   toggleNavMenu: () => void;
@@ -19,10 +20,11 @@ const Header = (props: propTypes) => {
       />
       <div className="headerText">Your Company Logo</div>
       <nav className="headerNav">
-        <NavItem text="Home"></NavItem>
-        <NavItem text="Gallery"></NavItem>
-        <NavItem text="About Us"></NavItem>
-        <NavItem text="Contact Us"></NavItem>
+        <IoClose className="headerExitButton" onClick={() => props.toggleNavMenu()} />
+        <NavItem text="Menu Item"></NavItem>
+        <NavItem text="Menu Item"></NavItem>
+        <NavItem text="Menu Item"></NavItem>
+        <NavItem text="Menu Item"></NavItem>
       </nav>
     </header>
   );
