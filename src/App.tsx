@@ -6,6 +6,7 @@ import "./styles/mainImage.css";
 import "./styles/statistics.css";
 import Header from "./components/Header";
 import MainImage from "./components/MainImage";
+import Cards from "./components/Cards";
 
 function App() {
   const [navMenuOpen, setNavMenuOpen] = useState(false);
@@ -25,26 +26,7 @@ function App() {
       <Header toggleNavMenu={toggleNavMenu} navMenuOpen={navMenuOpen} />
       <main>
         <MainImage />
-        <article className="statistics">
-          <div className="infoCardsContainer">
-            <div className="infoCard card-1">
-              <h3 className="infoCardHeader">Some Statistic</h3>
-              <p>A description of the statistic</p>
-            </div>
-            <div className="infoCard card-2">
-              <h3 className="infoCardHeader">Some Statistic</h3>
-              <p>A description of the statistic</p>
-            </div>
-            <div className="infoCard card-3">
-              <h3 className="infoCardHeader">Some Statistic</h3>
-              <p>A description of the statistic</p>
-            </div>
-            <div className="infoCard card-4">
-              <h3 className="infoCardHeader">Some Statistic</h3>
-              <p>A description of the statistic</p>
-            </div>
-          </div>
-        </article>
+        <Cards />
       </main>
       <footer></footer>
     </div>
