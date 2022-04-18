@@ -24,6 +24,10 @@
   padding-block: 1rem;
 }
 
+.Cards > h1 {
+  margin-inline: 2rem;
+}
+
 .infoCard {
   display: flex;
   flex-direction: column;

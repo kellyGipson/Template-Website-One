@@ -3,9 +3,11 @@ import { useState } from "react";
 import "./App.css";
 import "./styles/header.css";
 import "./styles/mainImage.css";
-import "./styles/statistics.css";
+import "./styles/cards.css";
+import "./styles/businessOverview.css";
 import Header from "./components/Header";
 import MainImage from "./components/MainImage";
+import BusinessOverview from "./components/BusinessOverview";
 import Cards from "./components/Cards";
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
       <Header toggleNavMenu={toggleNavMenu} navMenuOpen={navMenuOpen} />
       <main>
         <MainImage />
+        <BusinessOverview />
         <Cards />
       </main>
       <footer></footer>

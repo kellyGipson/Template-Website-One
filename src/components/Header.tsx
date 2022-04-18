@@ -21,10 +21,10 @@ const Header = (props: propTypes) => {
       <div className="headerText">Your Company Logo</div>
       <nav className="headerNav">
         <IoClose className="headerExitButton" onClick={() => props.toggleNavMenu()} />
-        <NavItem text="Menu Item"></NavItem>
-        <NavItem text="Menu Item"></NavItem>
-        <NavItem text="Menu Item"></NavItem>
-        <NavItem text="Menu Item"></NavItem>
+        <NavItem text="Home"></NavItem>
+        <NavItem text="About Us"></NavItem>
+        <NavItem text="Gallery"></NavItem>
+        <NavItem text="Contact"></NavItem>
       </nav>
     </header>
   );

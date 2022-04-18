@@ -1,0 +1,25 @@
+@media (max-width: 425px) {
+  .businessOverview {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .businessOverview > img {
+    width: calc(100vw - 4rem);
+    height: auto;
+    object-fit: cover;
+  }
+
+  .businessOverview > h3 {
+    margin-block: 1rem;
+    color: var(--accent-medium);
+  }
+
+  .businessOverview > h2 {
+    margin: 0;
+  }
+
+  .businessOverview > p {
+    color: var(--accent-dark);
+  }
+}
