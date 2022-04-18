@@ -15,4 +15,12 @@ html {
     overflow-y: hidden;
     overflow-x: hidden;
   }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 }

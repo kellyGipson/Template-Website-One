@@ -41,6 +41,7 @@
   width: 20rem;
   height: 10rem;
   object-position: 50% 50%;
+  border-radius: 0.25rem;
 }
 
 .infoCard > p {

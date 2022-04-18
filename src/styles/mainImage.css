@@ -52,6 +52,7 @@
   padding-block: 0.5rem;
   background-color: var(--white);
   color: var(--background-color);
+  border: 2px solid hsla(0, 0%, 0%, 0.1);
 }
 
 .imageSocialLink {
