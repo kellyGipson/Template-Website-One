@@ -17,8 +17,9 @@ const Header = (props: propTypes) => {
         className="headerLogo"
         src={require("../assets/Logo2_Grey.webp")}
         alt="Company Logo"
+        onClick={() => (window.location.href = "#")}
       />
-      <div className="headerText">Your Company Logo</div>
+      <div className="headerText">Company Logo</div>
       <nav className="headerNav">
         <IoClose className="headerExitButton" onClick={() => props.toggleNavMenu()} />
         <NavItem text="Home"></NavItem>

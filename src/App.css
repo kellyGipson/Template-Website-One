@@ -1,26 +1,39 @@
+/* @media (min-width:320px)  */
+/* @media (min-width:481px)  */
+/* @media (min-width:641px)  */
+/* @media (min-width:961px)  */
+/* @media (min-width:1025px) */
+/* @media (min-width:1281px) */
+
 html {
   --background-color: hsl(204, 28%, 7%);
   --accent-dark: hsl(224, 10%, 15%);
   --accent-color: #232ed1;
-  --accent-medium: #6564db;
+  --accent-medium: #8e8dcf;
   --accent-light: #89d2dc;
+  --darker-grey: #555;
   --grey: #999;
   --white: #ddd;
   --menu-speed: 0.6s;
   --menu-height: 4rem;
 }
+.overflowHidden {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 
-@media (max-width: 425px) {
-  .overflowHidden {
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
+html {
+  overflow-x: hidden;
+  width: 100vw;
+}
 
-  html {
-    overflow-x: hidden;
-  }
+body::-webkit-scrollbar {
+  display: none;
+}
 
-  body {
-    overflow-x: hidden;
-  }
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

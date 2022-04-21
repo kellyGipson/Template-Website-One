@@ -1,7 +1,45 @@
-@media (max-width: 425px) {
+/* @media (min-width:320px)  */
+/* @media (min-width:481px)  */
+/* @media (min-width:641px)  */
+/* @media (min-width:961px)  */
+/* @media (min-width:1025px) */
+/* @media (min-width:1281px) */
+
+@media (min-width: 320px) {
+  .mainImageContainer {
+    height: 50vh;
+  }
+
   .mainImage {
-    height: 24rem;
+    height: 100%;
+    width: 100%;
+  }
+
+  .imageSocialLinksContainer {
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+    position: absolute;
+    bottom: 0;
     width: 100vw;
+    padding-block: 0.5rem;
+    background-color: var(--white);
+    color: var(--background-color);
+    border: 2px solid hsla(0, 0%, 0%, 0.1);
+  }
+}
+
+@media (min-width: 1025px) {
+  .mainImageContainer {
+    height: 100vh;
+  }
+
+  .imageSocialLinksContainer {
+    right: 0;
+    flex-direction: column;
+    width: 5rem;
+    height: 15rem;
+    justify-content: space-evenly;
   }
 }
 
@@ -9,11 +47,12 @@
   position: relative;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .mainImage {
   object-fit: cover;
-  object-position: 50%;
+  object-position: 50% 50%;
   filter: brightness(87%);
 }
 
@@ -39,20 +78,6 @@
 .mainImageTextButton:active {
   background-color: var(--white);
   color: var(--accent-dark);
-}
-
-.imageSocialLinksContainer {
-  display: flex;
-  justify-content: center;
-  column-gap: 3rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  padding-block: 0.5rem;
-  background-color: var(--white);
-  color: var(--background-color);
-  border: 2px solid hsla(0, 0%, 0%, 0.1);
 }
 
 .imageSocialLink {

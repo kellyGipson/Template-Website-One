@@ -1,16 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import "./App.css";
 import "./styles/header.css";
 import "./styles/mainImage.css";
 import "./styles/cards.css";
 import "./styles/businessOverview.css";
+import "./styles/footer.css";
 import Header from "./components/Header";
 import MainImage from "./components/MainImage";
 import BusinessOverview from "./components/BusinessOverview";
 import Cards from "./components/Cards";
+import Footer from "./components/Footer";
 
 function App() {
+  useEffect(() => {
+    console.log(window.innerHeight, window.innerWidth);
+  }, []);
+
   const [navMenuOpen, setNavMenuOpen] = useState(false);
   const toggleNavMenu = () => {
     if (!navMenuOpen) {
@@ -26,12 +32,10 @@ function App() {
   return (
     <div className="App">
       <Header toggleNavMenu={toggleNavMenu} navMenuOpen={navMenuOpen} />
-      <main>
-        <MainImage />
-        <BusinessOverview />
-        <Cards />
-      </main>
-      <footer></footer>
+      <MainImage />
+      <BusinessOverview />
+      <Cards />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,108 @@
+/* @media (min-width:320px)  */
+/* @media (min-width:481px)  */
+/* @media (min-width:641px)  */
+/* @media (min-width:961px)  */
+/* @media (min-width:1025px) */
+/* @media (min-width:1281px) */
+
+@media (min-width: 320px) {
+  .footerItemContainer {
+    grid-template-areas:
+      "logo logo"
+      "nav overview"
+      "support social";
+    width: 30rem;
+  }
+}
+
+@media (min-width: 481px) {
+  .footerItemContainer {
+    grid-template-areas:
+      "logo logo logo"
+      "nav overview support"
+      ". social .";
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 30rem;
+  }
+}
+
+@media (min-width: 961px) {
+  .footerItemContainer {
+    grid-template-areas:
+      "logo logo logo logo"
+      "nav overview support social";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 40rem;
+  }
+}
+
+footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-color);
+}
+
+.footerItemContainer {
+  display: grid;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  background-color: var(--background-color);
+  color: var(--accent-medium);
+  line-height: 1.5rem;
+}
+
+.footer {
+  margin-bottom: 1rem;
+}
+
+.footerHeading {
+  font-weight: 700;
+  color: var(--white);
+}
+
+.footerLink:hover {
+  color: var(--white);
+}
+
+.footerLogoContainer {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  color: var(--white);
+}
+
+.footerCompanyImg {
+  width: 1.5rem;
+  height: auto;
+}
+
+.footerNav {
+  grid-area: nav;
+}
+
+.footerOverview {
+  grid-area: overview;
+}
+
+.footerSupport {
+  grid-area: support;
+}
+
+.footerSocial {
+  grid-area: social;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footerSocialContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
